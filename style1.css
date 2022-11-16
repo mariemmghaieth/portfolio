@@ -1,0 +1,368 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    text-align: justify;
+    box-sizing: border-box;
+}
+body{
+    background: white
+}
+p{
+    font-size: 1em;
+    line-height: 1.5em;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+header, footer{
+    width: 100%;
+    padding: 20px 0px;
+    background-color: rgb(67, 25, 102);
+    box-shadow: 0px 0px 15px #333;
+}
+header{
+    border-bottom: 2px solid #fff;
+    height: 120px;
+}
+header h1{
+    color: white;
+    font-size: 2em;
+    width: 90%;
+    margin: 0 auto;
+}
+h1{
+    font-size: 80px;
+    background-color: white;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    display: inline-block;
+}
+
+footer{
+    border-top: 2px solid #fff;
+}
+footer p{
+    width: 90%;
+    margin: 0 auto;
+    color: #fff;
+    text-align: center;
+}
+footer a{
+    color: #fff;
+}
+section{
+    display: flex; 
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 20px;
+    margin: 20px auto;
+    box-shadow: 0px 0px 10px #bbb;
+    background-color: rgb(240, 220, 220);
+}
+section h2{
+    margin: 20px 0;
+    width: 90%;
+}
+section > div{
+    width: 90%;
+}
+
+.photo{
+    text-align: center;
+}
+.photo img{
+    width: 150px;
+    height: 150px;
+    border: 3px solid #fff;
+    box-shadow: 0px 0px 10px #777;
+    border-radius: 50%;
+    margin-top: -80px;
+}
+ .qui{
+    border-bottom: 2px dashed #ccc;
+    border-radius: 6px;
+    color: #000;
+    padding: 16px;
+    width: 220px;
+    overflow: hidden;
+    transition: 0.6s;
+    transform: translate(0);
+    font-weight: 400;
+}
+.qui:hover{
+    color: rgb(240, 220, 220);
+}
+.qui p{margin: 0;}
+.qui::before{
+    content: "";
+    position: absolute;
+    top: -75px;
+    left: -45px;
+    z-index: -1;
+    background:white;
+    border-radius: 50%;
+    width: 200px;
+    height:200px;
+    transition: 0.6s;
+}
+.qui:hover::before{
+    transform: scale(4.5);
+}
+.qui a{
+    display: block;
+    text-align: center;
+    padding: 10px;
+    margin: 10px auto 30px auto;
+    color: #fff;
+    background-color: rgb(114, 72, 192);
+    box-shadow: 0px 0px 10px white;
+    border-radius: 5px;
+    transition: all 0.3s ease-out;
+}
+.contact{
+    border-radius: 6px;
+    color: #000;
+    padding: 16px;
+    width: 220px;
+    overflow: hidden;
+    transition: 0.6s;
+    transform: translate(0);
+    font-weight: 400;
+}
+.contact:hover{
+    color: rgb(240, 220, 220);
+}
+.contact p{margin: 0;}
+.contact::before{
+    content: "";
+    position: absolute;
+    top: -75px;
+    left: -45px;
+    z-index: -1;
+    background:white;
+    border-radius: 50%;
+    width: 200px;
+    height:200px;
+    transition: 0.6s;
+}
+.contact:hover::before{
+    transform: scale(4.5);
+}
+
+.contact-flex{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+.contact-flex p:first-child{
+    flex: 0 0 40%;
+}
+.contact-flex p:last-child{
+    flex: 0 0 60%;
+}
+.social{
+    display: flex;
+    justify-content: space-around;
+    margin: 10px auto 0px auto;
+}
+.social img{
+    width: 40px;
+    height: 40px;
+}
+.exp{
+    display: flex;
+    flex-flow: row wrap;
+    border-bottom: 1px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+.exp-info{
+    display: flex;
+    flex-flow: column wrap;
+    flex: 0 0 70%;
+    margin-left: auto;
+}
+.exp-logo{
+    flex: 0 0 25%;
+    max-width: 100px;
+}
+.h3-css{
+    width: 90%;
+}
+.exp img{
+    width: 100%;
+}
+.exp h3{
+    font-size: 1.2em;
+}
+.exp h4{
+    font-size: 1em;
+    font-weight: normal;
+}
+.exp img{
+    width: 100%;
+}
+.h3gauche{
+    width: 90%;
+}
+.comp{
+    display:flex;
+    flex-flow: row wrap;
+    margin-bottom: 10px;
+}
+.comp p{
+    flex: 0 0 40%;
+}
+.comp1 img{
+    max-width: 100px;
+}
+.conteur-barre{
+    flex: 0 0 60%;
+    border-radius: 5px;
+    background-color: rgb(240, 220, 220);
+    border-bottom: 1px ridge rgb(75, 75, 75);
+}
+.barre{
+    display: block;
+    height: 100%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.c60{
+    width: 60%;
+    background-color: rgb(114, 72, 192);
+}
+.c70{
+    width: 70%;
+    background-color: rgb(114, 72, 192);
+}
+.c75{
+    width: 75%;
+    background-color: rgb(114, 72, 192);
+}
+.c85{
+    width: 85%;
+    background-color: rgb(114, 72, 192);
+}
+.c80{
+    width: 80%;
+    background-color: rgb(114, 72, 192);
+}
+.c90{
+    width: 90%;
+    background-color: rgb(114, 72, 192);
+}
+.c100{
+    width: 100%;
+    background-color: rgb(114, 72, 192);
+    border-radius: 5px;
+}
+.comp2{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.conteneur-barre2{
+    flex: 0 0 100%;
+    height: 0.5em;
+    margin-bottom: 0.25em;
+    border-radius: 5px;
+    background-color: grey;
+}
+.interet{
+    flex: 0 1 50%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.interet img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 15px rgb(240, 220, 220);
+    transition: all 0.3s ease-out;
+}
+@media screen and (min-width: 980px){
+    section{
+        width: 80%;
+        box-shadow: 0px 0px 10px #bbb;
+    }
+    a:hover{
+        color: #EA0;
+    }
+    header h1{
+        width: 80%;
+    }
+    .qui, .contact{
+        flex: 0 0 45%;
+    }
+    .qui{
+        border-bottom: none;
+        border-right: 2px solid #ccc;
+        padding-right: 20px;
+        margin-left: auto;
+    }
+    .contact{
+        padding-left: 20px;
+        margin-right: auto;
+    }
+    .qui a{
+        border: 2px solid transparent;
+    }
+    .qui a:hover{
+        color: #000000;
+        background-color: #fff;
+        border: 2px solid #3ebe49;
+        box-shadow: 0px 0px 20px #666;
+    }
+    .exp-logo{
+        flex: 0 0 10%;
+    }
+    .exp-info, .exp-description{
+        flex: 0 0 85%;
+        margin-left: auto;
+    }
+    .interet{
+        flex: 0 1 25%;
+    }
+}
+nav{
+    right: 0;
+    position: absolute; 
+    top: 2.4em;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 5px; 
+}
+nav ul li a{
+    color: white;
+    font-size: 13px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+nav a:hover{
+    padding: 8px;
+    color: rgb(240, 220, 220) ;
+    transition: .3s;
+    font-weight: 600;
+
+}
+nav a:active{
+    padding: 8px;
+    color: rgb(240, 220, 220) ;
+
+    font-weight: 600;
+}
